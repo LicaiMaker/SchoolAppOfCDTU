@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/text_border"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/hotal_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#CCFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/hotal_detail_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="麻辣里脊"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_phoneInhotelDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/hotal_detail_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="028-32232345"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/text_border"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotal_detal_price"
+            android:text="人均消费：\n                   ￥20-￥31/人"
+            android:textColor="#FFCC33"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/hotal_detal_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="郫县成都工业学院\n悦彬路1号"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/IV_note"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/note1"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="成都工业学院摄影比赛开始了"/>
+</LinearLayout>
+    <TextView
+        android:id="@+id/TV_notedetails"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="今天，成都工业学院一年一度的摄影大赛开始了，希望小伙伴们踊跃报名，展示你生活中的美吧..."/>
+</LinearLayout>

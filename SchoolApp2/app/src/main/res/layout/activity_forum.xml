@@ -1,0 +1,110 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/pager"
+    android:layout_weight="1"
+
+    android:layout_width="match_parent" android:layout_height="0dp"
+    tools:context="com.schoolapp.schoolapp.forum.forumActivity" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_indexInForum"
+            android:layout_margin="3dp"
+            android:background="@drawable/text_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="70dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/index"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shoppingInForum"
+            android:layout_margin="3dp"
+            android:background="@drawable/text_border"
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="70dp">
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/shopping"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团购"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:id="@+id/ll_meInForum"
+            android:background="@drawable/text_border"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="70dp">
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/me"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            android:background="@drawable/text_border"
+            android:id="@+id/ll_otherInforum"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="70dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/other"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

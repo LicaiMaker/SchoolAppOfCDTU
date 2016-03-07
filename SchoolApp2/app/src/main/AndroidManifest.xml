@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.schoolapp.schoolapp" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>S
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!--<action android:name="android.intent.action.VIEW"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT"/>-->
+                <!--<category android:name="android.intent.category.browsable"/>-->
+
+                <data android:scheme="m" android:host="m.do"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".foods.FoodDetailsActivty"
+            android:label="FoodDetailsActivty" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".scenery.CommentActivity"
+            android:label="CommentActivity" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".scenery.SceneryDetailsActivity"
+            android:label="SceneryDetailsActivity" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".foods.FoodCategoryActivity"
+            android:label="FoodCategoryActivity" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".scenery.SceneryIndexActivity"
+            android:label="SceneryIndexActivity" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light"
+            android:name=".forum.forumActivity"
+            android:label="@string/title_activity_forum" >
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".hotel.HotelActivity"
+            android:label="@string/title_activity_hotel" >
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".hotel.HotelDetailsActivity"
+            android:label="@string/title_activity_hotel_details" >
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".PlaceSelectActivity"
+            android:label="@string/title_activity_place_select" >
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".shopping.GoodsDetailActivity"
+            android:label="GoodsDetailActivity"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".shopping.ShoppingIndexActivity" android:label="ShoppingIndexActivity"/>
+        <activity
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:name=".shopping.StoreActivity" android:label="StoreActivity"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".shopping.StoreDetailActivity" android:label="StoreDetailActivity"/>
+    </application>
+
+</manifest>
